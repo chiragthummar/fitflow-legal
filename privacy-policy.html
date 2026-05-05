@@ -28,97 +28,149 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="subtitle">Last updated: March 12, 2026</p>
+<p class="subtitle">Last updated: May 5, 2026</p>
 
 <div class="highlight">
-    <strong>Summary:</strong> FitFlow stores all your personal fitness data on your device only. We do not collect, transmit, or sell your personal information. We have no user accounts and no sign-in.
+    <strong>Summary:</strong> FitFlow is a home workout app. Most of your fitness data lives on your device. We use Firebase for analytics and crash reporting, Google AdMob to show ads to free users, and Apple HealthKit (with your permission) to read activity data and save your workouts. We do not sell your personal information.
 </div>
 
 <h2>1. Introduction</h2>
-<p>FitFlow ("the App") is a home workout application developed by Shayona ("we", "us", or "our"). This Privacy Policy explains how we handle information when you use our iOS application.</p>
-<p>We are committed to protecting your privacy. FitFlow is designed with a privacy-first approach — your personal fitness data never leaves your device.</p>
+<p>FitFlow ("the App") is a home workout application developed by Shayona ("we", "us", or "our"). This Privacy Policy explains how we collect, use, and share information when you use our iOS application.</p>
+<p>By using FitFlow you agree to the practices described here. If you don't agree, please don't use the App.</p>
 
-<h2>2. Information We Do NOT Collect</h2>
-<p>FitFlow does <strong>not</strong> collect, store, or transmit any of the following:</p>
+<h2>2. Information We Collect</h2>
+
+<h3>a) Stored on your device only</h3>
+<p>The following is kept on your device using Apple's standard local storage and is not transmitted to our servers:</p>
 <ul>
-    <li>Personal identification information (name, email, phone number)</li>
-    <li>Location data</li>
-    <li>Health or medical records</li>
-    <li>Biometric data</li>
-    <li>Browsing or search history</li>
-    <li>Contact lists or address books</li>
-    <li>Photos, videos, or camera access</li>
-    <li>Device identifiers for tracking purposes</li>
+    <li><strong>Fitness preferences:</strong> chosen fitness level (Beginner, Intermediate, Advanced) and weekly workout goal.</li>
+    <li><strong>Display name:</strong> an optional name you provide during onboarding.</li>
+    <li><strong>Workout history:</strong> records of completed workouts including date, duration, and estimated calories burned.</li>
+    <li><strong>Custom workouts:</strong> any workouts you create within the app.</li>
+    <li><strong>Plan progress, achievements, weekly challenges, streak data.</strong></li>
+    <li><strong>App preferences:</strong> notification reminder times, voice-coach selection, and reminder schedules.</li>
 </ul>
 
-<h2>3. Information Stored Locally on Your Device</h2>
-<p>FitFlow stores the following data <strong>locally on your device only</strong> using Apple's standard on-device storage (UserDefaults):</p>
+<h3>b) Apple HealthKit (only with your permission)</h3>
+<p>If you grant FitFlow access to Apple Health, we may:</p>
 <ul>
-    <li><strong>Fitness preferences:</strong> Your chosen fitness level (Beginner, Intermediate, Advanced) and weekly workout goal</li>
-    <li><strong>Display name:</strong> An optional name you provide during onboarding, stored only on your device</li>
-    <li><strong>Workout history:</strong> Records of completed workouts including date, duration, and estimated calories burned</li>
-    <li><strong>Custom workouts:</strong> Any workouts you create within the app</li>
-    <li><strong>Fitness plan progress:</strong> Your progress through structured workout plans</li>
-    <li><strong>Achievement data:</strong> Milestones and achievements you have unlocked</li>
-    <li><strong>App preferences:</strong> Notification reminder times and settings</li>
+    <li><strong>Read</strong> step count, active energy burned, and heart rate to display today's activity on the Home screen and inside the workout player.</li>
+    <li><strong>Write</strong> a workout session to Apple Health when you finish a workout, so it appears alongside your other activity data.</li>
 </ul>
-<p>This data is <strong>never transmitted</strong> to our servers or any third party. If you delete the app, all local data is permanently removed.</p>
+<p>HealthKit data is not transmitted to our servers and is not used for advertising. You can revoke this permission at any time via <em>Settings → Privacy &amp; Security → Health → FitFlow</em>.</p>
 
-<h2>4. Health and Fitness Data</h2>
-<p>FitFlow is a fitness and exercise application. We take the handling of health-related data seriously:</p>
+<h3>c) Analytics and crash diagnostics</h3>
+<p>We use Firebase Analytics and Firebase Crashlytics to understand how FitFlow is used and to fix bugs. The events we record include:</p>
 <ul>
-    <li>FitFlow does <strong>not</strong> integrate with Apple HealthKit</li>
-    <li>FitFlow does <strong>not</strong> access or read any data from the Health app</li>
-    <li>Calorie estimates provided by FitFlow are <strong>approximations for informational purposes only</strong> and should not be considered medical advice</li>
-    <li>All fitness data (workout history, progress) is stored <strong>exclusively on your device</strong></li>
-    <li>We do <strong>not</strong> use your fitness data for advertising, analytics, or profiling</li>
+    <li>App installs, app opens, screen views.</li>
+    <li>Workouts completed (workout name, duration, calorie estimate, exercise count).</li>
+    <li>Meals logged, paywall views, onboarding completion.</li>
+    <li>Subscription purchases, including the Apple StoreKit transaction ID, product ID, price, and currency.</li>
+    <li>Crash and stability reports.</li>
 </ul>
+<p>These events are linked to a Firebase Installation ID, not to your name or email. We do not pass your fitness or health data to Firebase.</p>
+
+<h3>d) Advertising data</h3>
+<p>Free users see advertisements served by Google AdMob. To deliver and measure those ads, AdMob and its bidding partners may collect:</p>
+<ul>
+    <li>The advertising identifier (IDFA) on iOS, but <strong>only if you grant permission</strong> via the App Tracking Transparency prompt. If you decline, ads are still shown but in a non-personalized form.</li>
+    <li>Approximate location derived from IP address.</li>
+    <li>Device information (model, OS version, language, screen size).</li>
+    <li>Ad interaction events (impressions, clicks, conversions).</li>
+</ul>
+<p>Premium subscribers do not see ads and the AdMob SDK does not request ad inventory for them.</p>
+
+<h2>3. How We Use Your Information</h2>
+<ul>
+    <li>To provide the workout, plan, achievement, and nutrition features of the App.</li>
+    <li>To measure how FitFlow is used so we can improve it (analytics).</li>
+    <li>To diagnose and fix crashes (Crashlytics).</li>
+    <li>To deliver and measure advertisements served to free users (AdMob).</li>
+    <li>To process subscription purchases through Apple StoreKit.</li>
+    <li>To send local workout reminders, if you allow notifications.</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+
+<h3>a) Firebase (Google LLC)</h3>
+<ul>
+    <li><strong>Firebase Firestore</strong> serves the workout exercise library to the app in read-only mode.</li>
+    <li><strong>Firebase Analytics</strong> records the events listed above.</li>
+    <li><strong>Firebase Crashlytics</strong> captures crash reports.</li>
+</ul>
+<p>See <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy &amp; Security</a> for details.</p>
+
+<h3>b) Google AdMob (Google LLC)</h3>
+<p>AdMob serves advertisements inside the free version of FitFlow (App Open ads on launch, Interstitial ads after workouts, and optional Rewarded ads to unlock a single workout for one day). AdMob's data practices are described at <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Privacy Policy</a>.</p>
+
+<h3>c) Google User Messaging Platform</h3>
+<p>We use Google's UMP SDK to ask EEA, UK, and CCPA-eligible users for ad-consent decisions and to let those users revisit their decision via <em>Settings → Privacy Choices (Ads)</em>.</p>
+
+<h3>d) Apple StoreKit</h3>
+<p>Subscription billing is handled entirely by Apple. We do not see your Apple ID, payment method, or full transaction history. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+
+<h3>e) Apple HealthKit</h3>
+<p>HealthKit access is opt-in and described in section 2(b). Apple processes this data on-device only.</p>
+
+<h2>5. Children's Privacy</h2>
+<p>FitFlow is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If we serve ads to a user we have reason to believe is under 13, AdMob is configured to deliver only non-personalized advertising for that user.</p>
+
+<h2>6. Your Choices</h2>
+
+<h3>a) App Tracking Transparency (iOS)</h3>
+<p>The first time FitFlow tries to access your advertising identifier, iOS will show the App Tracking Transparency prompt. You can change your decision at any time via <em>Settings → Privacy &amp; Security → Tracking → FitFlow</em>.</p>
+
+<h3>b) Privacy Choices (in-app)</h3>
+<p>Users in the EEA, UK, or other regions where consent is required can revisit their ad-consent decision via <em>Settings → General → Privacy Choices (Ads)</em>.</p>
+
+<h3>c) Notifications</h3>
+<p>You can disable workout reminders in your device's Settings → Notifications → FitFlow.</p>
+
+<h3>d) HealthKit</h3>
+<p>Manage HealthKit permissions in your device's Settings → Privacy &amp; Security → Health → FitFlow.</p>
+
+<h2>7. Your Rights (GDPR / UK GDPR / Switzerland)</h2>
+<p>If you are located in the European Economic Area, the United Kingdom, or Switzerland, you have the right to:</p>
+<ul>
+    <li>Access, correct, or delete the personal data we hold about you.</li>
+    <li>Withdraw consent for personalized advertising at any time using <em>Settings → Privacy Choices (Ads)</em> in the App.</li>
+    <li>Object to processing or request restriction of processing.</li>
+    <li>Lodge a complaint with your local data-protection authority.</li>
+</ul>
+<p>To exercise rights that we cannot fulfil through in-app controls, email us at the address in section 11.</p>
+
+<h2>8. Your Rights (CCPA / CPRA — California)</h2>
+<p>California residents have the right to:</p>
+<ul>
+    <li>Know what categories of personal information we collect.</li>
+    <li>Request deletion of personal information we hold.</li>
+    <li>Opt out of the sale or sharing of personal information for cross-context behavioural advertising.</li>
+    <li>Be free from discrimination for exercising any of these rights.</li>
+</ul>
+<p>You can opt out of personalized advertising at any time via <em>Settings → Privacy Choices (Ads)</em>. We do not knowingly sell personal information for monetary value.</p>
+
+<h2>9. Data Retention and Deletion</h2>
+<ul>
+    <li>Data stored locally on your device persists until you uninstall the app.</li>
+    <li>Workouts written to Apple Health are kept by Apple under your control. Delete them from the Health app.</li>
+    <li>Anonymous analytics and crash data retained by Firebase follow <a href="https://firebase.google.com/support/privacy" target="_blank">Google's data retention policies</a>.</li>
+    <li>To delete all locally stored data, simply uninstall FitFlow.</li>
+</ul>
+
+<h2>10. Data Security</h2>
+<p>Local data is protected by your device's built-in security features (passcode, Face ID, Touch ID). Network requests to Firebase, AdMob, and Apple are made over HTTPS using current TLS standards.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy or requests to exercise your rights:</p>
+<p><strong>Email:</strong> <a href="mailto:akashmagukiya10@gmail.com">akashmagukiya10@gmail.com</a></p>
+
+<h2>12. Medical Disclaimer</h2>
 <div class="highlight">
-    <strong>Medical Disclaimer:</strong> FitFlow is not a medical device and does not provide medical advice. The workouts, calorie estimates, and fitness information provided are for general fitness purposes only. Always consult a healthcare professional before starting any new exercise program, especially if you have pre-existing health conditions.
+    <strong>FitFlow is not a medical device and does not provide medical advice.</strong> Workouts and calorie estimates are for general fitness purposes only. Always consult a qualified healthcare professional before starting any new exercise program, particularly if you have a pre-existing condition, are pregnant, or are recovering from injury.
 </div>
 
-<h2>5. Third-Party Services</h2>
-<p>FitFlow uses the following third-party services with limited scope:</p>
-
-<h3>a) Firebase (Google)</h3>
-<ul>
-    <li><strong>Firebase Firestore:</strong> Used in <strong>read-only mode</strong> to deliver the workout exercise library to the app. No personal data is written to or stored in Firebase.</li>
-    <li><strong>Firebase Crashlytics:</strong> Collects anonymous crash reports to help us fix bugs and improve app stability. Crash data does not contain personal information and cannot be used to identify you.</li>
-    <li><strong>Firebase Analytics:</strong> Collects anonymous, aggregated usage data (e.g., app opens, screen views) to help us understand how the app is used. This data is not linked to your identity.</li>
-</ul>
-<p>For more information, see <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</p>
-
-<h3>b) Apple (StoreKit)</h3>
-<ul>
-    <li>In-app subscriptions are processed entirely by Apple through StoreKit. We do not have access to your payment information, Apple ID, or billing details.</li>
-    <li>For information on how Apple handles your purchase data, see <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
-</ul>
-
-<h2>6. Notifications</h2>
-<p>FitFlow may request permission to send local notifications for workout reminders. These notifications are scheduled entirely on your device and do not involve any server communication. You can disable notifications at any time through your device's Settings.</p>
-
-<h2>7. Children's Privacy</h2>
-<p>FitFlow is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since all data is stored locally on the device and we have no user accounts or data collection, there is no mechanism for collecting children's data.</p>
-
-<h2>8. Data Retention and Deletion</h2>
-<ul>
-    <li>All personal fitness data is stored on your device only</li>
-    <li>To delete all your data, simply delete the FitFlow app from your device</li>
-    <li>Anonymous crash reports and analytics data retained by Firebase are not linked to your identity and follow <a href="https://firebase.google.com/support/privacy" target="_blank">Google's data retention policies</a></li>
-</ul>
-
-<h2>9. Data Security</h2>
-<p>Your fitness data is protected by your device's built-in security features, including device passcode, Face ID, or Touch ID. Since data is stored locally and not transmitted over the internet, it is not exposed to network-based threats.</p>
-
-<h2>10. Your Rights</h2>
-<p>Since FitFlow does not collect or store personal data on external servers, traditional data access requests do not apply. You have full control over your data on your device at all times. You can delete all data by uninstalling the app.</p>
-
-<h2>11. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
-
-<h2>12. Contact Us</h2>
-<p>If you have questions about this Privacy Policy or FitFlow's data practices, please contact us at:</p>
-<p><strong>Email:</strong> shayona.dev@gmail.com</p>
+<h2>13. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Material changes will be reflected here with an updated "Last updated" date. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
 
 </body>
 </html>
