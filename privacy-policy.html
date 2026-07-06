@@ -28,7 +28,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="subtitle">Last updated: June 20, 2026</p>
+<p class="subtitle">Last updated: July 6, 2026</p>
 
 <div class="highlight">
     <strong>Summary:</strong> FitFlow is a home workout app for iOS and Android. Most of your fitness data lives on your device. We use Firebase for analytics, Google AdMob to show ads to free users — with a Google-certified consent form asking users in the EEA, UK, and Switzerland about personalized ads — and, on iOS only, Apple HealthKit (with your permission) to read activity data and save your workouts. The Android app does not connect to Health Connect or any other health or fitness platform. We do not sell your personal information.
@@ -43,7 +43,8 @@
 <h3>a) Stored on your device only</h3>
 <p>The following is kept on your device using the platform's standard local storage and is not transmitted to our servers:</p>
 <ul>
-    <li><strong>Fitness preferences:</strong> chosen fitness level (Beginner, Intermediate, Advanced) and weekly workout goal.</li>
+    <li><strong>Fitness preferences:</strong> chosen fitness level (Beginner, Intermediate, Advanced), primary goal, and weekly workout goal.</li>
+    <li><strong>Optional profile fields:</strong> age, height, current weight, and goal weight. Used to personalize workout recommendations and post-workout summaries. Not transmitted to our servers, Firebase, or any ad partner.</li>
     <li><strong>Display name:</strong> an optional name you provide during onboarding.</li>
     <li><strong>Workout history:</strong> records of completed workouts including date, duration, and estimated calories burned.</li>
     <li><strong>Custom workouts:</strong> any workouts you create within the app.</li>
@@ -72,7 +73,7 @@
 <p>These events are linked to an app-generated installation/analytics identifier, not to your name or email. We do not pass your fitness or health data to Firebase.</p>
 
 <h3>d) Advertising data</h3>
-<p>Free users see advertisements served by Google AdMob. To deliver and measure those ads, AdMob and its bidding partners may collect:</p>
+<p>Free users see advertisements served by Google AdMob. As of app version 1.5.5 the AdMob waterfall also mediates through <strong>Meta Audience Network</strong> and <strong>Unity Ads</strong>. To deliver and measure those ads, AdMob and its mediation partners may collect:</p>
 <ul>
     <li>A mobile advertising identifier — the <strong>IDFA</strong> on iOS (only if you allow it via the App Tracking Transparency prompt) or the <strong>Advertising ID</strong> on Android. In regions where consent is required (EEA, UK, Switzerland), a Google-certified consent form asks whether you agree to personalized ads. If you decline, are not asked, or have not granted the iOS tracking prompt, ads are still shown but in a <strong>non-personalized</strong> form.</li>
     <li>Approximate location derived from IP address.</li>
@@ -104,13 +105,19 @@
 <h3>b) Google AdMob (Google LLC)</h3>
 <p>AdMob serves advertisements inside the free version of FitFlow: App Open ads on launch, banner and native ads on the Home screen, Interstitial ads between screens, and optional Rewarded ads to unlock a single locked workout. AdMob's data practices are described at <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Privacy Policy</a>.</p>
 
-<h3>c) Google User Messaging Platform (UMP)</h3>
-<p>We use Google's User Messaging Platform SDK to gather ad-consent decisions from users in the EEA, UK, Switzerland, and applicable US states, and to let those users revisit or withdraw their decision in the app — <em>Settings → Privacy Choices (Ads)</em> on iOS, or <em>Settings → Manage ad consent</em> on Android. Until consent is gathered where it is required, the App requests only non-personalized ads.</p>
+<h3>c) Meta Audience Network (Meta Platforms, Inc.)</h3>
+<p>As of app version 1.5.5, FitFlow uses Meta Audience Network as an AdMob mediation partner. When Meta wins an ad slot in the AdMob waterfall, Meta receives a limited request payload — the device advertising identifier if you allowed it via the ATT prompt (iOS) or the Advertising ID (Android), coarse device information, and the ad-placement type — so it can bid and, if it wins, deliver the ad and measure the impression. Ad-consent choices you make in the Google UMP form are forwarded to Meta automatically. Meta's data practices are described at <a href="https://www.facebook.com/about/privacy/" target="_blank">Meta's Privacy Policy</a> and <a href="https://www.facebook.com/audiencenetwork/resources/policies/data-processing-terms" target="_blank">Audience Network Data Processing Terms</a>.</p>
 
-<h3>d) Apple StoreKit (iOS) and Google Play Billing (Android)</h3>
+<h3>d) Unity Ads (Unity Technologies)</h3>
+<p>As of app version 1.5.5, FitFlow uses Unity Ads as an AdMob mediation partner. Unity receives the same limited payload described above when it wins an ad slot in the AdMob waterfall. Ad-consent choices from the Google UMP form are forwarded to Unity automatically. Unity Ads' data practices are described at the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank">Unity Game Player and App User Privacy Policy</a>.</p>
+
+<h3>e) Google User Messaging Platform (UMP)</h3>
+<p>We use Google's User Messaging Platform SDK to gather ad-consent decisions from users in the EEA, UK, Switzerland, and applicable US states, and to let those users revisit or withdraw their decision in the app — <em>Settings → Privacy Choices (Ads)</em> on iOS, or <em>Settings → Manage ad consent</em> on Android. Until consent is gathered where it is required, the App requests only non-personalized ads. Consent choices are forwarded to all mediation partners named above.</p>
+
+<h3>f) Apple StoreKit (iOS) and Google Play Billing (Android)</h3>
 <p>Subscription billing is handled entirely by the platform app store — Apple on iOS, Google on Android. We do not see your Apple ID or Google account, payment method, or full transaction history. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
-<h3>e) Apple HealthKit (iOS only)</h3>
+<h3>g) Apple HealthKit (iOS only)</h3>
 <p>HealthKit access is opt-in and described in section 2(b). Apple processes this data on-device only. The Android app does not access any health platform.</p>
 
 <h2>5. Children's Privacy</h2>
