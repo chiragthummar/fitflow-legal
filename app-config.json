@@ -1,0 +1,32 @@
+{
+  "app": {
+    "latest_version_code": 22,
+    "latest_version_name": "1.0.21",
+    "is_force_update": false,
+    "update_url": "https://play.google.com/store/apps/details?id=com.shayona.fitflow",
+    "update_title": "Update available",
+    "update_message": "A new version of FitFlow is available with new features and fixes. Please update to continue.",
+    "is_terminated": false,
+    "terminated_title": "App unavailable",
+    "terminated_message": "FitFlow has moved to a new app. Please download the new version to keep going.",
+    "new_app_url": "https://play.google.com/store/apps/details?id=com.shayona.fitflow"
+  },
+  "ads": {
+    "show_ads": true,
+    "admob": {
+      "app_open": "ca-app-pub-4818503743858431/3635187358",
+      "banner": "ca-app-pub-4818503743858431/7335289442",
+      "native": "ca-app-pub-4818503743858431/8152861339",
+      "interstitial": "ca-app-pub-4818503743858431/6022207778",
+      "rewarded": "ca-app-pub-4818503743858431/2082962769"
+    }
+  },
+  "promo": {
+    "show_ad_dialog": false,
+    "title": "Try our new app!",
+    "message": "Love FitFlow? Check out our brand-new app — download it now and enjoy even more.",
+    "image_url": "",
+    "app_url": "https://play.google.com/store/apps/details?id=com.shayona.otherapp",
+    "cta_text": "Download Now"
+  }
+}
